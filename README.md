@@ -1,5 +1,14 @@
-# dind
+# jenkins-docker-node
 
-Fork of https://github.com/jpetazzo/dind, aimed to provide jenkins-docker-slave with Java & Maven inside.
+Merge of [jpetazzo/dind](https://github.com/jpetazzo/dind) with [bibinwilson/jenkins-slave](bibinwilson/jenkins-slave)
 
-Docker is required to run Flask unit tests before pushing the image.
+"Docker in docker" is required to run Flask unit tests inside the container, before pushing the image.
+
+Original article regarding this setup is [here](https://devopscube.com/docker-containers-as-build-slaves-jenkins/) .
+
+#### How to:
+* `docker pull jakubbialoskorski/jenkins-docker-node`
+
+or put it as Jenkins docker executor:
+
+* `Manage Jenkins` -> `Manage Nodes and Clouds` -> `Configure Clouds` -> `Docker Agent Templates` -> `Docker Image`
