@@ -1,5 +1,7 @@
 # jenkins-docker-node
 
+[![Dockerfile](https://github.com/JakubBialoskorski/jenkins-docker-node/actions/workflows/buildAndPush.yml/badge.svg)](https://github.com/JakubBialoskorski/jenkins-docker-node/actions/workflows/buildAndPush.yml)
+
 Merge of [jpetazzo/dind](https://github.com/jpetazzo/dind) with [bibinwilson/jenkins-slave](https://github.com/bibinwilson/jenkins-docker-slave)
 
 "Docker in docker" is required to run Flask unit tests inside the container, before pushing the image.
